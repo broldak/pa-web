@@ -1,0 +1,50 @@
+.plan-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+
+  &__header {
+    height: 80px;
+    padding: 0 16px 8px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+    color: white;
+
+    &-img {
+      background-image: url('http://via.placeholder.com/240x50');
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.5;
+      }
+    }
+
+    &-text {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  &__body,
+  &__footer {
+    padding: 16px;
+    color: $text-color;
+  }
+
+  &__body {
+    flex: 1;
+  }
+}

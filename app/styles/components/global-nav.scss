@@ -1,0 +1,32 @@
+.global-nav {
+  background-color: $brand-color;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+
+  &__logo {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+  }
+
+  &__profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 12px;
+  }
+
+  &__section {
+    &--right {
+
+    }
+  }
+}

@@ -1,0 +1,12 @@
+body,
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+.content {
+  padding: 24px;
+}
+
+.lazy-image-container img {
+  transition: opacity 0.2s ease-out;
+}

@@ -1,0 +1,9 @@
+<ul class="plans-list">
+  {{#each model as |plan|}}
+    <li class="plans-list__item">
+      {{#link-to "plans.show" plan class="plans-list__item-link"}}
+        {{plan-item plan=plan}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>

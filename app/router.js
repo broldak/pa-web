@@ -6,7 +6,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('plans');
+  this.route('plans', function() {
+    this.route('index', { path: '/' });
+    this.route('show', { path: '/:plan_id'});
+  });
   this.route('users');
 });
 

@@ -1,0 +1,20 @@
+.plans-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-left: -16px;
+  margin-right: -16px;
+
+  &__item {
+    width: 240px;
+    min-height: 300px;
+    box-sizing: border-box;
+    margin: 16px;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+
+    &-link {
+      text-decoration: none;
+    }
+  }
+}
