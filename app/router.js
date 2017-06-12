@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('show', { path: '/:plan_id'});
   });
   this.route('users');
+  this.route('login');
 });
 
 export default Router;
